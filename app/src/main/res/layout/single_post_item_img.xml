@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="5sp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:contentPaddingBottom="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/car_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/car_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdfasdf"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ffffff"
+            android:layout_alignBottom="@+id/car_img"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/star_layout"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/star_img"
+                android:visibility="invisible"
+                android:background="@drawable/gold_star"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/star_img_border"
+                android:background="@drawable/black_star_border"
+                android:backgroundTint="@color/colorStarBorder"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/car_img">
+
+            <TextView
+                android:id="@+id/car_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="$"
+                android:textSize="25sp"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/car_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:layout_toEndOf="@+id/car_price_txt"
+                android:layout_alignBottom="@id/car_price_txt"
+                android:text="5555" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ month for"
+                android:layout_toEndOf="@+id/car_price"
+                android:textSize="15sp"
+                android:layout_alignBottom="@+id/car_price"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/for_txt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/car_rentTime"
+                android:layout_toEndOf="@+id/for_txt"
+                android:textSize="20sp"
+                android:layout_alignBottom="@+id/car_price"
+                android:text="10 days"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.elvis.carleaseapp.MainActivity">
+
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/user_w"
+        android:title="Profile"
+        android:onClick="showLogin"
+        app:showAsAction="always"></item>
+</menu>

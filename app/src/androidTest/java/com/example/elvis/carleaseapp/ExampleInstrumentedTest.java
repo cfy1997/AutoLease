@@ -1,4 +1,4 @@
-package com.fangying_chen.carlease;
+package com.example.elvis.carleaseapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.fangying_chen.carlease", appContext.getPackageName());
+        assertEquals("com.example.elvis.carleaseapp", appContext.getPackageName());
     }
 }

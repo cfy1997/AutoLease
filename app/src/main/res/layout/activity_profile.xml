@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_bg"
+    tools:context="com.example.elvis.carleaseapp.ProfileActivity">
+
+
+    <Button
+        android:id="@+id/hisBt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAllCaps="false"
+        android:gravity="left|center_vertical"
+        android:background="@drawable/hisbt_selector"
+        android:textSize="18dp"
+        android:onClick="viewHistory"
+        android:text="             View Post History"
+        android:layout_marginTop="230dp"/>
+
+    <Button
+        android:id="@+id/psdBt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:gravity="left|center_vertical"
+        android:background="@drawable/editbt_selector"
+        android:text="             Change Password"
+        android:layout_below="@+id/lovedBt"
+        android:onClick="changePsd"/>
+
+    <Button
+        android:id="@+id/signOutBt"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="#a50000"
+        android:onClick="signOut"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/profile_user"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/lovedBt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAllCaps="false"
+        android:background="@drawable/starbt_selector"
+        android:textSize="18dp"
+        android:gravity="left|center_vertical"
+        android:onClick="viewSaved"
+        android:text="             Saved"
+        android:layout_below="@+id/hisBt"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
